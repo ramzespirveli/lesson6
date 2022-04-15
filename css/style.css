@@ -1,0 +1,124 @@
+
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+.wraper {
+		width: 100%;
+	height: 100%;
+	position: relative;
+	display: block;
+}
+.peizaj {
+		width: 100%;
+	height: 100%;
+	display: block;
+	position: relative;
+
+}
+.gogo {
+	width: 100px;
+	height: 150px;
+	top: 400px;
+	position: absolute;
+	animation: gogona 3s 1 linear; 2s;
+	z-index: 2;
+}
+@keyframes gogona {
+	0%{left: 0px;}
+	100%{left: 30px;}
+
+}
+.samizne {
+	width: 60px;
+	height: 60px;
+	background: green;
+	position: absolute;
+	top: 430px;
+	right: 20px;
+	animation: mymove 4.7s 1 ;
+
+}
+.centr {
+	width: 20px;
+	height: 20px;
+	top: 50%;
+    left: 50%;
+	background: yellow;
+	position: absolute;
+	transform: translate(-50%,-50%) rotate(45deg);
+
+}
+.isari {
+	transform: r;
+	width: 80px;
+	height: 50px;
+	top: 435px;
+	position: absolute;
+	z-index: 1;
+	animation: isari 3s 1 2s;
+
+}
+@keyframes isari {
+	30%{left: 0px;}
+	100%{left: 1260px;}
+}
+@keyframes mymove {
+  from {top: 430px; background:green;}
+  to {top: 430px; background:red;}
+}
+.flay {
+	width: 250px;
+	top: 50px;
+	position: absolute;
+	z-index: 2;
+	animation: airzena 20s infinite linear;
+
+
+}
+
+@keyframes airzena {
+	0% {right: 0px; top: 50px;}
+	15%{right: 100px; top: 100px;}
+	30%{right: 250px; top: 150px;}
+	45%{right: 400px; top: 200px;}
+	60%{right: 550px; top: 200px;}
+	75% {right:700px; top: 150px;}
+	90%{right: 900px; top: 100px;}
+	100%{right: 1100px; top: 50px;}
+	
+}
+.parashuti {
+	width: 30px;
+	top: 70px;
+	position: absolute;
+	animation: parashut 20s infinite linear;
+}
+@keyframes parashut {
+		0% {right: 10px; top: 70px;}
+	15%{right: 100px; top: 100px;}
+	30%{right: 250px; top: 150px;}
+	45%{right: 400px; top: 200px;}
+	60%{right: 400px; top:400px;}
+	75% {right:450px; top: 500px;}
+	90%{right: 500px; top: 600px;}
+	100%{right: 550px; top:700px;}
+}
+.mze {
+	width: 150px;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+	animation: yel-sun 20s infinite linear;
+}
+@keyframes yel-sun {
+   0% {left: 0px; top: 0px;}
+	15%{left: 100px; top: 20px; transform: rotate(45deg);}
+	30%{left: 200px; top: 40px; transform: rotate(90deg);}
+	45%{left: 300px; top: 60px; transform: rotate(135deg);}
+	60%{left: 400px; top:80px; transform: rotate(180deg);}
+	75% {left:500px; top: 100px; transform: rotate(225deg);}
+	90%{left: 600px; top: 120px; transform: rotate(270deg);}
+	100%{left: 700px; top:150px; transform: rotate(315deg);}
+}
